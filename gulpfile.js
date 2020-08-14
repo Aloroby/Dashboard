@@ -35,8 +35,8 @@ gulp.task("css", function() {
 // JS Task
 gulp.task("js", function() {
     return gulp.src("stage/js/*.js")
-        .pipe(minify())
         .pipe(concat("main.js"))
+        .pipe(minify())
         .pipe(gulp.dest("dist/js"))
         .pipe(gulpLivereload())
 })

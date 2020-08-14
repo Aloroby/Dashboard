@@ -8,7 +8,7 @@ html(lang="en")
         include pug/layout/style
     body
         .page.home-page
-            include pug/layout/sidebar.pug
+            include pug/layout/sidebar
             .content-area
-                h1 Contnt Area now
-        script(src="http://localhost:35729/livereload.js")
+                include pug/layout/header
+        include pug/layout/scripts

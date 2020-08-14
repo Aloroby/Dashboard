@@ -24,5 +24,8 @@ body {
         -moz-transition: .3s linear;
         -ms-transition: .3s linear;
         -o-transition: .3s linear;
+        &.no-side {
+            width: 100%;
+        }
     }
 }
