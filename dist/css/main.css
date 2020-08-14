@@ -1,0 +1,3 @@
+.page .sidebar{width:250px;position:fixed;top:0;left:0;background-color:indianred;height:100%;padding:15px;transition:all .3s linear;-webkit-transition:all .3s linear;-moz-transition:all .3s linear;-ms-transition:all .3s linear;-o-transition:all .3s linear}*{box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-moz-box-sizing:border-box}body{padding:0;margin:0;font-family:Tahoma, Arial}.page{min-height:100vh}.page .content-area{width:calc(100% - 250px);min-height:100%;will-change:width;float:right;padding:15px;transition:.3s linear;-webkit-transition:.3s linear;-moz-transition:.3s linear;-ms-transition:.3s linear;-o-transition:.3s linear}
+
+/*# sourceMappingURL=main.css.map */
