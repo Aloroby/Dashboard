@@ -1,0 +1,9 @@
+$themes:( theme-one:( color: #0088c2), theme-two:( color: #333333), theme-thre:(color: #CCCCCC), theme-four:(color:#000000));
+@each $them,
+$map in $themes {
+    .#{theme} {
+        .className {
+            color: map-get($map, color)
+        }
+    }
+}

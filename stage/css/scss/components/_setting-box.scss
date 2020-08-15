@@ -1,0 +1,44 @@
+.setting-box {
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+    .toggle-box {
+        position: absolute;
+        left: -45px;
+        background-color: white;
+        top: 30vh;
+        padding: 8px;
+        cursor: pointer;
+    }
+    &.hide-box {
+        right: -250px;
+    }
+    .color-box {
+        ul {
+            $color: #0088c2, #333333, #363636, #000000, green;
+            @for $i from 1 through length($color) {
+                li:nth-child(#{$i}) {
+                    background-color: nth($color, $i);
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+            }
+        }
+    }
+}
