@@ -18,6 +18,14 @@ $(function() {
         $(this).find("i").toggleClass("fa-spin");
         $(this).parent().toggleClass("hide-box");
     })
+    var themesColor = []
+    $(".color-box li").each(function() {
+        themesColor.push($(this).data("color"))
+    })
+    $(".color-box li").on("click", function() {
+        $("body").removeClass(themesColor.join(" ")).addClass($(this).data("color"))
+        $(this).addClass("active").siblings().removeClass("active")
+    })
 });
 var elem = document.documentElement;
 

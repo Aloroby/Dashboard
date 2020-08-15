@@ -1,11 +1,12 @@
 .setting-box.hide-box
     .toggle-box
         i.fa.fa-cog.fa-2x
-    .option-box.color-box
+    .option-box.color-box.text-center
+        h4 Color Options
         - var themes = ["theme-one","theme-tow","theme-thre","theme-four","theme-five"]
         ul.list-unstyled
             each theme in themes
-                li(data-color=theme)
+                li(data-color=theme class="active")
     .option-box
         |Hello
 
