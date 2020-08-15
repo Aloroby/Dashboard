@@ -1,4 +1,88 @@
 .header {
     background-color: #fff;
     padding: 15px;
+    .noty-minue {
+        display: inline-block;
+        .dropdown-menu {
+            width: 500px;
+            cursor: default;
+            font-size: 16px;
+            border: none;
+            padding: 0;
+            box-shadow: 0 0 5px #CCC;
+            font-family: 'Open Sans', sans-serif;
+            position: relative;
+            background-color: #fff;
+            top: 5px !important;
+            &:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 25px;
+                top: -23px;
+                left: 12px;
+                border-width: 12px;
+                border-style: solid;
+                border-color: transparent transparent #f4f6f9 transparent;
+            }
+            .noti-head {
+                background-color: #f4f6f9;
+                padding: 15px;
+                font-size: 20px;
+                span {
+                    float: right;
+                    background-color: #FA3E3E;
+                    padding: 2px;
+                    position: relative;
+                    top: -5px;
+                    color: white;
+                    font-size: 10px;
+                    border-radius: 45% 45% 45% 5%;
+                    -webkit-border-radius: 45% 45% 45% 5%;
+                    -moz-border-radius: 45% 45% 45% 5%;
+                    -ms-border-radius: 45% 45% 45% 5%;
+                    -o-border-radius: 45% 45% 45% 5%;
+                }
+            }
+            .noti-body {
+                padding: 10px 10px 0 10px;
+                ul {
+                    margin: 0;
+                    li {
+                        padding: 10px;
+                        border-bottom: 1px solid #f4f6f9;
+                        cursor: pointer;
+                        i {
+                            margin-right: 10px;
+                            background-color: #FA3E3E;
+                            padding: 5px;
+                            color: white;
+                            border-radius: 40% 40% 40% 10%;
+                            -webkit-border-radius: 40% 40% 40% 10%;
+                            -moz-border-radius: 40% 40% 40% 10%;
+                            -ms-border-radius: 40% 40% 40% 10%;
+                            -o-border-radius: 40% 40% 40% 10%;
+                        }
+                    }
+                }
+            }
+            .noti-footer {
+                display: block;
+                padding: 15px;
+                background-color: #f4f6f9;
+                a {
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .bell-note {
+            margin-left: 20px;
+            cursor: pointer;
+            user-select: none;
+            font-size: 25px;
+            padding: 12px;
+        }
+    }
 }
