@@ -1,11 +1,11 @@
 $(function() {
     $(".toggle-side").on("click", function() {
         $(".sidebar, .content-area").toggleClass("no-side")
-    })
+    });
     $(".toggle").on("click", function() {
         $(this).next(".child-links").slideToggle();
         $(this).find(".fa-angle-right").toggleClass("down")
-    })
+    });
     $(".toggle-screen").on("click", function() {
         $(this).toggleClass("full-screen");
         if ($(this).hasClass("full-screen")) {
@@ -13,6 +13,10 @@ $(function() {
         } else {
             closeFullscreen()
         }
+    });
+    $(".toggle-box").on("click", function() {
+        $(this).find("i").toggleClass("fa-spin");
+        $(this).parent().toggleClass("hide-box");
     })
 });
 var elem = document.documentElement;
