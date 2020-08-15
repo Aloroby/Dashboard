@@ -1,15 +1,13 @@
 .sidebar
     .logo-area
-        h4 Mohamed Mojahed
+        h4 Dashboard
     ul.links-area.list-unstyled
-        li 
-            a.toggle(href="#")
-                | #{title}
-                i.fa.fa-angle-right
+        li: a(href="homepage.html") Home Page
+        li: a(href="charts.html") Charts
             ul.list-unstyled.child-links
                 li: a(href="#") Test
         li
-            a.toggle(href="#")
+            a.toggle
                 | forms
                 i.fa.fa-angle-right
             ul.list-unstyled.child-links
@@ -18,7 +16,7 @@
                 li: a(href="#") Text Area
                 li: a(href="#") Radio
         li
-            a.toggle(href="#") 
+            a.toggle 
                 | Mixin
                 i.fa.fa-angle-right
             ul.list-unstyled.child-links

@@ -35,7 +35,7 @@
         ul {
             border-bottom: 1px solid #ccc;
             margin: 0;
-            $color: #ff1744, #03A9F4, #FF5722, #009688, #00e676, ;
+            $color: #ff1744, #03A9F4, #FF5722, #009688, #00e676, #8e44ad;
             @for $i from 1 through length($color) {
                 li:nth-child(#{$i}) {
                     background-color: nth($color, $i);

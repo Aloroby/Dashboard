@@ -15,13 +15,12 @@ gulp.task("new", function() {
     })
     // HTML Task
 gulp.task("html", function() {
-    return gulp.src("stage/html/*.pug")
-        .pipe(pug({ pretty: true }))
-        .pipe(gulp.dest("dist"))
-        .pipe(gulpLivereload())
-})
-
-// CSS Task
+        return gulp.src("stage/html/*.pug")
+            .pipe(pug({ pretty: true }))
+            .pipe(gulp.dest("dist"))
+            .pipe(gulpLivereload())
+    })
+    // CSS Task
 gulp.task("css", function() {
     return gulp.src(["stage/css/**/*.css", "stage/css/**/*.scss"])
         .pipe(sourcemaps.init())

@@ -1,0 +1,18 @@
+- var title = "Charts";
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+        include pug/layout/style
+    body
+        .page.home-page
+            include pug/components/setting-box
+            include pug/layout/sidebar
+            .content-area
+                include pug/layout/header
+                .content-page
+                    h1 #{title}
+                    p.lead This Is Test Discription In Chrts Page
+        include pug/layout/scripts

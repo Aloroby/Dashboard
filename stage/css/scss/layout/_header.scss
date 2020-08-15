@@ -3,6 +3,7 @@
     padding: 15px;
     .toggle-side {
         color: #ff1744;
+        cursor: pointer;
     }
     .noty-minue {
         display: inline-block;
@@ -152,10 +153,20 @@
                         margin: 0;
                         -o-border-radius: 15px;
                         padding: 8px 10px;
-                        i {
+                        i:frist-child() {
                             font-size: 15px;
                             margin-right: 5px;
-                            color: #ff1744;
+                            color: #0088c2 !important;
+                        }
+                        i:nth-child(2) {
+                            font-size: 15px;
+                            margin-right: 5px;
+                            color: #16a085 !important;
+                        }
+                        i:last-child() {
+                            font-size: 15px;
+                            margin-right: 5px;
+                            color: #ff1744 !important;
                         }
                     }
                 }
