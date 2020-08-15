@@ -8,7 +8,19 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    &.montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
+    &.nunito {
+        font-family: 'Nunito', sans-serif;
+    }
+    &.roboto {
+        font-family: 'Roboto', sans-serif;
+    }
+    &.source {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
 }
 
 .page {
