@@ -77,12 +77,15 @@
                 }
             }
         }
-        .bell-note {
-            margin-left: 20px;
-            cursor: pointer;
-            user-select: none;
-            font-size: 25px;
-            padding: 12px;
-        }
+    }
+    .header-icons {
+        margin-left: 20px;
+        cursor: pointer;
+        user-select: none;
+        font-size: 25px;
+        padding: 12px;
+    }
+    .toggle-screen {
+        font-size: 22px;
     }
 }
