@@ -88,4 +88,20 @@
     .toggle-screen {
         font-size: 22px;
     }
+    .user-container {
+        float: right;
+        user-select: none;
+        .user-info {
+            cursor: pointer;
+            img {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+            }
+            span {
+                margin-right: 10px;
+                font-weight: bold;
+            }
+        }
+    }
 }
